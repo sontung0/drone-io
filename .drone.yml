@@ -2,7 +2,11 @@ kind: pipeline
 name: default
 
 steps:
-- name: test
+- name: node version
   image: node
   commands:
   - npm -v
+- name: php version
+  image: php:7
+  commands:
+  - php -v
